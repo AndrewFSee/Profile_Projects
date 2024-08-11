@@ -31,7 +31,7 @@ The XGBoost classifier demonstrated strong performance in predicting the directi
 ### Conclusion:
 The project successfully applied an XGBoost classifier to forecast SPY return directions, offering a useful tool for investors looking to make informed trading decisions. Future work could involve integrating additional data sources, refining feature engineering, and exploring other classification algorithms to further enhance prediction accuracy.
 
-![](https://github.com/AndrewFSee/Profile_Projects/blob/main/images/project1.png)
+![](/images/project1.png)
 
 
 ## [Project 2: Simulating Stock Prices Using Monte Carlo Simulations of Geometric Brownian Motion](https://github.com/AndrewFSee/Profile_Projects/blob/main/Monte_Carlo_GBM.ipynb)
