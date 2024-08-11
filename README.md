@@ -164,3 +164,112 @@ The K-means clustering effectively grouped ETFs into clusters of similar price b
 The project successfully applied K-means clustering to group ETFs, analyzed cointegration for pairs trading, and used t-SNE to visualize asset relationships. This approach offers a systematic method for selecting pairs trading opportunities based on clustering results, long-term relationships, and visual insights. Future work could involve refining the clustering methodology, incorporating additional features, and testing trading strategies based on the identified pairs.
 
 ![](https://github.com/AndrewFSee/Profile_Projects/blob/main/images/project4.png)
+
+## [Project 5: Dimensionality Reduction of Stock Data Using Principal Component Analysis (PCA)](https://github.com/AndrewFSee/Profile_Projects/blob/main/Technical_Analysis_Features_PCA.ipynb)
+
+### Objective:
+The objective of this project is to apply Principal Component Analysis (PCA) to reduce the dimensionality of stock data while preserving its essential characteristics. The project aims to simplify data analysis, improve model performance, and uncover underlying patterns in the stock market data.
+
+### Methodology:
+- Principal Component Analysis (PCA): PCA was utilized to transform the high-dimensional stock data into a lower-dimensional space. This technique identifies the principal components that capture the most variance in the data, enabling more efficient analysis and modeling.
+- Dimensionality Reduction: By projecting the stock data onto the principal components, the project aimed to reduce the number of features while retaining significant information, facilitating easier visualization and interpretation.
+  
+### Data Collection:
+Historical stock market data was collected, including:
+- Price Data: Daily open, high, low, and close prices for a range of stocks over a specified period.
+- Additional Features: Computed features such as returns, volatility, and technical indicators to enrich the dataset.
+  
+### Data Preprocessing:
+- Feature Engineering: Derived features from the raw price data, including returns and rolling statistics, to prepare for PCA.
+- Normalization: Standardized the features to ensure that all variables contribute equally to the PCA, preventing scale dominance.
+- Missing Value Handling: Addressed any missing values in the dataset to ensure data integrity.
+  
+### Model Development:
+- PCA Implementation: Applied PCA to the preprocessed stock data to identify the principal components that explain the maximum variance. Determined the number of components to retain based on explained variance ratios and scree plots.
+- Dimensionality Reduction: Reduced the dimensionality of the dataset by projecting it onto the selected principal components, creating a new, lower-dimensional feature set.
+  
+### Evaluation:
+- Explained Variance: Evaluated the proportion of variance explained by each principal component to assess how well the dimensionality reduction retained the original data’s information.
+- Visualization: Visualized the stock data in the lower-dimensional space to identify patterns and relationships between stocks. Techniques such as scatter plots and biplots were used to interpret the principal components.
+- Model Performance: Assessed the impact of dimensionality reduction on the performance of predictive models or clustering algorithms applied to the reduced dataset.
+  
+### Results:
+PCA effectively reduced the dimensionality of the stock data while preserving the key characteristics of the original dataset. The principal components captured significant variance and allowed for easier visualization and interpretation of the data. The reduced feature set facilitated more efficient modeling and analysis, enhancing the understanding of underlying patterns in the stock market.
+
+### Conclusion:
+The project demonstrated the effectiveness of Principal Component Analysis for dimensionality reduction in stock data. By simplifying the dataset while retaining essential information, PCA improved data analysis and model performance. Future work could involve experimenting with different dimensionality reduction techniques, integrating PCA with other data processing steps, and exploring its impact on various financial models.
+
+![](https://github.com/AndrewFSee/Profile_Projects/blob/main/images/project5.png)
+
+## [Project 6: Portfolio Optimization Using Markowitz Portfolio Theory](https://github.com/AndrewFSee/Profile_Projects/blob/main/Portfolio_Optimization.ipynb)
+
+### Objective:
+The project aims to optimize an investment portfolio using Markowitz Portfolio Theory to achieve the best possible return for a given level of risk. By applying this classic theory, the project seeks to construct an efficient frontier of portfolios that balances risk and return, guiding investors in making informed investment decisions.
+
+### Methodology:
+- Markowitz Portfolio Theory: Applied Markowitz Portfolio Theory to optimize the asset allocation in a portfolio. This theory focuses on creating an "efficient frontier" of optimal portfolios, where each portfolio offers the maximum expected return for a given level of risk or the minimum risk for a given level of expected return.
+- Risk-Return Tradeoff: Incorporated the tradeoff between risk (measured as portfolio variance or standard deviation) and return (measured as expected return) to find the optimal asset allocation.
+  
+### Data Collection:
+Historical financial data was collected, including:
+- Asset Prices: Daily or monthly historical prices for a set of assets (e.g., stocks, bonds, ETFs).
+- Returns: Calculated historical returns for each asset to estimate expected returns and risk.
+- Covariance Matrix: Computed the covariance matrix of asset returns to assess how assets move relative to each other.
+  
+### Data Preprocessing:
+- Feature Engineering: Derived returns, volatility, and covariance from the historical price data.
+- Normalization: Standardized data where necessary to ensure consistency in calculations.
+
+### Model Development:
+- Optimization Model: Formulated an optimization problem where the objective was to maximize the Sharpe ratio (the ratio of excess return to portfolio risk) subject to constraints. Constraints included budget constraints (e.g., total investment equals 100%) and possibly other limits (e.g., maximum or minimum investment in each asset).
+- Efficient Frontier: Used optimization techniques (e.g., quadratic programming) to generate the efficient frontier—a set of optimal portfolios that offer the best risk-return tradeoff.
+- Selection of Optimal Portfolio: Identified the optimal portfolio along the efficient frontier based on the investor’s risk tolerance and return objectives.
+  
+### Evaluation:
+- Performance Metrics: Assessed portfolio performance using metrics such as the Sharpe ratio, maximum drawdown, and overall return versus risk.
+
+### Results:
+The application of Markowitz Portfolio Theory successfully identified an efficient frontier of portfolios, offering a range of optimal asset allocations that balance risk and return. The optimized portfolios demonstrated improved risk-return characteristics compared to non-optimized portfolios, providing valuable guidance for investment decisions.
+
+### Conclusion:
+The project effectively utilized Markowitz Portfolio Theory to optimize asset allocation and construct an efficient frontier. This approach provided a systematic method for achieving desired investment outcomes based on risk and return preferences. Future work could involve integrating additional factors such as transaction costs, liquidity constraints, or incorporating alternative optimization techniques to further enhance portfolio performance.
+
+![](https://github.com/AndrewFSee/Profile_Projects/blob/main/images/project6.png)
+
+## [Project 7: Stock Trading Using Proximal Policy Optimization (PPO)](https://github.com/AndrewFSee/Profile_Projects/blob/main/PPO_Stock_Returns.ipynb)
+
+### Objective:
+The project aims to develop and implement a stock trading strategy using Proximal Policy Optimization (PPO), a reinforcement learning algorithm. The goal is to train an agent that can make informed trading decisions to maximize cumulative returns while managing risk.
+
+### Methodology:
+- Proximal Policy Optimization (PPO): Utilized PPO, a state-of-the-art reinforcement learning algorithm, to train an agent for stock trading. PPO is designed to handle high-dimensional action spaces and continuous environments, making it suitable for complex trading scenarios.
+- Reinforcement Learning Framework: The trading environment was modeled as a reinforcement learning problem, where the agent learns to make trading decisions (buy, sell, hold) based on observed market states (e.g., stock prices, technical indicators) to maximize long-term rewards.
+  
+### Data Collection:
+Historical stock market data was collected, including:
+
+- Price Data: Daily or intraday historical prices for selected stocks.
+Technical Indicators: Calculated features such as VWAP to provide the agent with relevant information for decision-making.
+
+### Data Preprocessing:
+- Feature Engineering: Created a set of features from the raw price data and technical indicators to represent the state space for the reinforcement learning model.
+- Normalization: Standardized the features to ensure that the learning algorithm can effectively process the data.
+- Environment Setup: Developed a trading environment where the PPO agent interacts with the market data and learns from its actions.
+  
+### Model Development:
+- PPO Implementation: Implemented PPO using a deep reinforcement learning framework such as PyTorch or TensorFlow. Defined the policy network and value network architectures, and configured the PPO algorithm with appropriate hyperparameters (e.g., learning rate, batch size).
+- Training: Trained the PPO agent using historical market data, optimizing the policy to maximize cumulative returns while adhering to risk management constraints (e.g., drawdown limits).
+Evaluation Metrics: Backtested the results obtained by the PPO agent against a buy-and-hold strategy.
+
+### Evaluation:
+- Backtesting: Performed backtesting of the trained PPO agent on unseen historical data to assess its performance and robustness in different market conditions.
+- Comparison: Compared the PPO-based trading strategy against baseline strategies (e.g., buy-and-hold, simple moving average crossover) to evaluate its effectiveness and improvements.
+- Sensitivity Analysis: Analyzed the sensitivity of the trading strategy to different hyperparameters and market conditions to ensure stability and adaptability.
+  
+### Results:
+The PPO-based trading strategy demonstrated the ability to make informed trading decisions that led to improved returns compared to baseline strategies. The agent effectively learned to navigate market dynamics, optimizing its actions to maximize cumulative returns while managing risk.
+
+### Conclusion:
+The project successfully applied Proximal Policy Optimization to develop a stock trading strategy, leveraging reinforcement learning to make informed trading decisions. The PPO agent showed promising results in terms of returns and risk management. Future work could involve refining the model with additional features, experimenting with alternative reinforcement learning algorithms, and testing the strategy in live trading environments to further validate its effectiveness.
+
+![](https://github.com/AndrewFSee/Profile_Projects/blob/main/images/project7.png)
