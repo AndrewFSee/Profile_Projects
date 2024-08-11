@@ -2,7 +2,7 @@
 
 Welcome and thanks for taking the time to look at my portfolio projects.  As an avid stock trader and Data Science enthusiast, I am always working on projects to further my knowledge in both.  I enjoy working on projects that allow me to learn about new developments in machine learning/deep learning and practice my Data Science skills while finding new data driven ways to invest.  These projects represent a wide range of techniques from supervised learning, unsupervised learning, and reinforcement learning to more traditional statistical techniques.
 
-## Project 1 Summary: Predicting SPY Stock Returns Using an XGBoost Classifier
+## [Project 1 Summary: Predicting SPY Stock Returns Using an XGBoost Classifier](https://github.com/AndrewFSee/Profile_Projects/blob/main/Stock_Returns_Prediction.ipynb)
 ### Objective:
 This project aims to develop a classification model using XGBoost to predict the future direction of SPDR S&P 500 ETF Trust (SPY) returns—specifically, whether the return will be positive or negative. The goal is to provide actionable trading signals based on historical data and technical indicators.
 
