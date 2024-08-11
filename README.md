@@ -7,7 +7,7 @@ Welcome and thanks for taking the time to look at my portfolio projects.  As an 
 This project aims to develop a classification model using XGBoost to predict the future direction of SPDR S&P 500 ETF Trust (SPY) returns—specifically, whether the return will be positive or negative. The goal is to provide actionable trading signals based on historical data and technical indicators.
 
 ### Data Collection:
-Historical stock price data for SPY, including daily open, high, low, close prices, and trading volume, was sourced from financial databases such as Yahoo Finance or Alpha Vantage. Technical indicators, such as moving averages, relative strength index (RSI), and volatility measures, were calculated to enrich the dataset and provide additional predictive features.
+Historical stock price data for SPY, including daily open, high, low, close prices, and trading volume, was sourced from Yahoo Finance. Technical indicators, such as moving averages, relative strength index (RSI), and volatility measures, were calculated to enrich the dataset and provide additional predictive features.
 
 ### Data Preprocessing:
 
