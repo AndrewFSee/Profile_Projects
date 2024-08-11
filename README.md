@@ -80,7 +80,7 @@ The Monte Carlo simulations produced a range of potential future stock price tra
 ### Conclusion:
 The project effectively utilized Monte Carlo simulations of Geometric Brownian Motion to model and predict stock prices, providing valuable insights into future price behavior and risk assessment. Future work could involve refining the model with additional factors, such as jumps or mean-reversion processes, and integrating alternative simulation techniques for improved accuracy.
 
-![](https://github.com/AndrewFSee/Profile_Projects/blob/main/images/project2.png)
+![](/images/project2.png)
 
 ## [Project 3: Detecting Stock Market Regimes Using Hidden Markov Models](https://github.com/AndrewFSee/Profile_Projects/blob/main/Hidden_Markov_Models_for_Market_Regimes.ipynb)
 ### Objective:
@@ -120,7 +120,7 @@ The HMM successfully identified distinct market regimes and provided insights in
 ### Conclusion:
 The project effectively utilized Hidden Markov Models to detect and analyze stock market regimes, providing a powerful tool for understanding market phases and improving investment strategies. Future work could involve enhancing the model with additional features, exploring different HMM configurations, and integrating the regime detection into real-time trading systems.
 
-![](https://github.com/AndrewFSee/Profile_Projects/blob/main/images/project3.png)
+![](/images/project3.png)
 
 ## [Project 4: Grouping ETFs Using K-means Clustering and Analyzing Cointegration for Pairs Trading](https://github.com/AndrewFSee/Profile_Projects/blob/main/Kmeans_PairsTrading.ipynb)
 
@@ -163,7 +163,7 @@ The K-means clustering effectively grouped ETFs into clusters of similar price b
 ### Conclusion:
 The project successfully applied K-means clustering to group ETFs, analyzed cointegration for pairs trading, and used t-SNE to visualize asset relationships. This approach offers a systematic method for selecting pairs trading opportunities based on clustering results, long-term relationships, and visual insights. Future work could involve refining the clustering methodology, incorporating additional features, and testing trading strategies based on the identified pairs.
 
-![](https://github.com/AndrewFSee/Profile_Projects/blob/main/images/project4.png)
+![](/images/project4.png)
 
 ## [Project 5: Dimensionality Reduction of Stock Data Using Principal Component Analysis (PCA)](https://github.com/AndrewFSee/Profile_Projects/blob/main/Technical_Analysis_Features_PCA.ipynb)
 
@@ -199,7 +199,7 @@ PCA effectively reduced the dimensionality of the stock data while preserving th
 ### Conclusion:
 The project demonstrated the effectiveness of Principal Component Analysis for dimensionality reduction in stock data. By simplifying the dataset while retaining essential information, PCA improved data analysis and model performance. Future work could involve experimenting with different dimensionality reduction techniques, integrating PCA with other data processing steps, and exploring its impact on various financial models.
 
-![](https://github.com/AndrewFSee/Profile_Projects/blob/main/images/project5.png)
+![](/images/project5.png)
 
 ## [Project 6: Portfolio Optimization Using Markowitz Portfolio Theory](https://github.com/AndrewFSee/Profile_Projects/blob/main/Portfolio_Optimization.ipynb)
 
@@ -234,7 +234,7 @@ The application of Markowitz Portfolio Theory successfully identified an efficie
 ### Conclusion:
 The project effectively utilized Markowitz Portfolio Theory to optimize asset allocation and construct an efficient frontier. This approach provided a systematic method for achieving desired investment outcomes based on risk and return preferences. Future work could involve integrating additional factors such as transaction costs, liquidity constraints, or incorporating alternative optimization techniques to further enhance portfolio performance.
 
-![](https://github.com/AndrewFSee/Profile_Projects/blob/main/images/project6.png)
+![](/images/project6.png)
 
 ## [Project 7: Stock Trading Using Proximal Policy Optimization (PPO)](https://github.com/AndrewFSee/Profile_Projects/blob/main/PPO_Stock_Returns.ipynb)
 
@@ -272,4 +272,4 @@ The PPO-based trading strategy demonstrated the ability to make informed trading
 ### Conclusion:
 The project successfully applied Proximal Policy Optimization to develop a stock trading strategy, leveraging reinforcement learning to make informed trading decisions. The PPO agent showed promising results in terms of returns and risk management. Future work could involve refining the model with additional features, experimenting with alternative reinforcement learning algorithms, and testing the strategy in live trading environments to further validate its effectiveness.
 
-![](https://github.com/AndrewFSee/Profile_Projects/blob/main/images/project7.png)
+![](/images/project7.png)
