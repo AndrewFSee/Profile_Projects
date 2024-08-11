@@ -30,3 +30,50 @@ The XGBoost classifier demonstrated strong performance in predicting the directi
 
 ### Conclusion:
 The project successfully applied an XGBoost classifier to forecast SPY return directions, offering a useful tool for investors looking to make informed trading decisions. Future work could involve integrating additional data sources, refining feature engineering, and exploring other classification algorithms to further enhance prediction accuracy.
+
+
+## [Project 2 Summary: Simulating Stock Prices Using Monte Carlo Simulations of Geometric Brownian Motion](https://github.com/AndrewFSee/Profile_Projects/blob/main/Monte_Carlo_GBM.ipynb)
+### Objective:
+The primary objective of this project is to utilize Monte Carlo simulations based on Geometric Brownian Motion (GBM) to model and predict future stock prices. By generating a range of possible price paths, the project aims to assess the potential variability and risk associated with stock price movements.
+
+### Methodology:
+
+- Geometric Brownian Motion (GBM): The GBM model was employed to capture the stochastic behavior of stock prices. The model assumes that stock prices follow a log-normal distribution with continuous time dynamics, where returns are normally distributed and prices exhibit both drift and volatility.
+- Monte Carlo Simulations: Multiple simulations (e.g., 10,000) were run to generate a diverse set of possible future price paths for the stock. Each simulation utilized random sampling to account for the uncertainty and randomness inherent in financial markets.
+
+### Data Collection:
+Historical stock price data was collected to estimate the model parameters:
+
+- Drift (μ): The average return of the stock, calculated from historical price data.
+- Volatility (σ): The standard deviation of returns, also derived from historical data.
+  
+### Simulation Process:
+
+1. Parameter Estimation: Calculated the drift and volatility based on historical price data.
+
+2. Simulation Setup: Defined the time horizon and time steps for the simulation. For each simulation run, stock price paths were generated using the GBM formula:
+
+$$
+\displaystyle S_t = S_0 \exp\left\{\left(\mu - \frac{\sigma^2}{2}\right)t + \sigma W_t\right\}
+$$
+
+where:
+   - \($ S_t $\) is the stock price at time \($ t $\).
+   - \($ \mu $\) is the drift rate, representing the expected return of the stock.
+   - \($ \sigma $\) is the volatility of the stock, indicating the degree of variation in the stock price.
+   - \($ W_t $\) is a Wiener process or Brownian motion, representing the random component.
+
+
+
+3. Visualization: The simulated stock price paths were visualized to assess the range of potential future prices. Summary statistics, such as mean and variance of simulated paths, were computed.
+
+### Evaluation:
+
+- Risk Assessment: The simulations provided insights into the range of possible future stock prices, allowing for the assessment of potential risks and uncertainties.
+- Value at Risk (VaR): Calculated VaR to quantify the potential loss in stock value over a specified time horizon with a given confidence level.
+  
+### Results:
+The Monte Carlo simulations produced a range of potential future stock price trajectories, demonstrating the inherent variability and uncertainty in stock price movements. The simulations allowed for a better understanding of potential risks and helped in decision-making related to investment strategies.
+
+### Conclusion:
+The project effectively utilized Monte Carlo simulations of Geometric Brownian Motion to model and predict stock prices, providing valuable insights into future price behavior and risk assessment. Future work could involve refining the model with additional factors, such as jumps or mean-reversion processes, and integrating alternative simulation techniques for improved accuracy.
