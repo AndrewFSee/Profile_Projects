@@ -1,11 +1,3 @@
----
-layout: slate
----
-
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
 # Andrew's Portfolio
 
 Welcome and thank you for taking the time to explore my portfolio projects. As a passionate stock trader and Data Science enthusiast, I continuously work on projects that not only deepen my understanding of the markets but also enhance my skills in data-driven investing. I focus on developing innovative approaches to trading by leveraging the latest advancements in machine learning, deep learning, and traditional statistical methods. My portfolio showcases a diverse range of projects, from supervised and unsupervised learning to reinforcement learning, all aimed at refining my trading strategies and expanding my knowledge in this dynamic field.
