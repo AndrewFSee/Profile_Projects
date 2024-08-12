@@ -1,6 +1,14 @@
+---
+layout: slate
+---
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 # Andrew's Portfolio
 
-Welcome and thanks for taking the time to look at my portfolio projects.  As an avid stock trader and Data Science enthusiast, I am always working on projects to further my knowledge in both.  I enjoy working on projects that allow me to learn about new developments in machine learning/deep learning and practice my Data Science skills while finding new data driven ways to invest.  These projects represent a wide range of techniques from supervised learning, unsupervised learning, and reinforcement learning to more traditional statistical techniques.
+Welcome and thank you for taking the time to explore my portfolio projects. As a passionate stock trader and Data Science enthusiast, I continuously work on projects that not only deepen my understanding of the markets but also enhance my skills in data-driven investing. I focus on developing innovative approaches to trading by leveraging the latest advancements in machine learning, deep learning, and traditional statistical methods. My portfolio showcases a diverse range of projects, from supervised and unsupervised learning to reinforcement learning, all aimed at refining my trading strategies and expanding my knowledge in this dynamic field.
 
 ## [Project 1: Predicting SPY Stock Returns Using an XGBoost Classifier](https://github.com/AndrewFSee/Profile_Projects/blob/main/Stock_Returns_Prediction.ipynb)
 ### Objective:
