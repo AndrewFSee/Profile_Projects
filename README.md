@@ -55,9 +55,9 @@ Historical stock price data was collected to estimate the model parameters:
 
 2. Simulation Setup: Defined the time horizon and time steps for the simulation. For each simulation run, stock price paths were generated using the GBM formula:
 
-$$
+\[
 S_t = S_0 \exp((\mu - \frac{\sigma^2}{2})t + \sigma W_t)
-$$
+\]
 
 where:
    - $S_t$ is the stock price at time $t$.
