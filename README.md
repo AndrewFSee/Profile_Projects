@@ -58,7 +58,7 @@ S_t = S_0 \exp((\mu - \frac{\sigma^2}{2})t + \sigma W_t)
 \]
 
 where:
-   - $S_t$ is the stock price at time $t$.
+   - $ \S_t $ is the stock price at time $t$.
    - $\mu$ is the drift rate, representing the expected return of the stock.
    - $\sigma$ is the volatility of the stock, indicating the degree of variation in the stock price.
    - $W_t$ is a Wiener process or Brownian motion, representing the random component.
