@@ -1,6 +1,16 @@
 Welcome and thank you for taking the time to explore my portfolio projects. As a passionate stock trader and Data Science enthusiast, I continuously work on projects that not only deepen my understanding of the markets but also enhance my skills in data-driven investing. I focus on developing innovative approaches to trading by leveraging the latest advancements in machine learning, deep learning, and traditional statistical methods. My portfolio showcases a diverse range of projects, from supervised and unsupervised learning to reinforcement learning, all aimed at refining my trading strategies and expanding my knowledge in this dynamic field.  I am currently working on projects that incorporate the OpenAI API into my algorithmic trading and quantitative research and furthering my studies in reinforcement learning and the Markov decision process.
 
-## [Project 1: Predicting SPY Stock Returns Using an XGBoost Classifier](https://github.com/AndrewFSee/Profile_Projects/blob/main/Stock_Returns_Prediction.ipynb)
+## Projects
+### - Predicting SPY Stock Returns Using an XGBoost Classifier
+### - Simulating Stock Prices Using Monte Carlo Simulations of Geometric Brownian Motion
+### - Detecting Stock Market Regimes Using Hidden Markov Models
+### - Grouping ETFs Using K-means Clustering and Analyzing Cointegration for Pairs Trading
+### - Dimensionality Reduction of Stock Data Using Principal Component Analysis (PCA)
+### - Portfolio Optimization Using Markowitz Portfolio Theory
+### - Stock Trading Using Proximal Policy Optimization (PPO)
+### - AI-Powered Stock Recommender System Using OpenAI API
+
+## [Predicting SPY Stock Returns Using an XGBoost Classifier](https://github.com/AndrewFSee/Profile_Projects/blob/main/Stock_Returns_Prediction.ipynb)
 ### Objective:
 This project aims to develop a classification model using XGBoost to predict the future direction of SPDR S&P 500 ETF Trust (SPY) returns—specifically, whether the return will be positive or negative. The goal is to provide actionable trading signals based on historical data and technical indicators.
 
@@ -32,7 +42,7 @@ The project successfully applied an XGBoost classifier to forecast SPY return di
 ![](/images/project1.png)
 
 
-## [Project 2: Simulating Stock Prices Using Monte Carlo Simulations of Geometric Brownian Motion](https://github.com/AndrewFSee/Profile_Projects/blob/main/Monte_Carlo_GBM.ipynb)
+## [Simulating Stock Prices Using Monte Carlo Simulations of Geometric Brownian Motion](https://github.com/AndrewFSee/Profile_Projects/blob/main/Monte_Carlo_GBM.ipynb)
 ### Objective:
 The primary objective of this project is to utilize Monte Carlo simulations based on Geometric Brownian Motion (GBM) to model and predict future stock prices. By generating a range of possible price paths, the project aims to assess the potential variability and risk associated with stock price movements.
 
@@ -80,7 +90,7 @@ The project effectively utilized Monte Carlo simulations of Geometric Brownian M
 
 ![](/images/project2.png)
 
-## [Project 3: Detecting Stock Market Regimes Using Hidden Markov Models](https://github.com/AndrewFSee/Profile_Projects/blob/main/Hidden_Markov_Models_for_Market_Regimes.ipynb)
+## [Detecting Stock Market Regimes Using Hidden Markov Models](https://github.com/AndrewFSee/Profile_Projects/blob/main/Hidden_Markov_Models_for_Market_Regimes.ipynb)
 ### Objective:
 The project aims to apply Hidden Markov Models (HMMs) to identify and analyze different regimes in the stock market. By detecting shifts in market conditions, the project seeks to provide insights into regime changes that can inform investment strategies and risk management.
 
@@ -120,7 +130,7 @@ The project effectively utilized Hidden Markov Models to detect and analyze stoc
 
 ![](/images/project3.png)
 
-## [Project 4: Grouping ETFs Using K-means Clustering and Analyzing Cointegration for Pairs Trading](https://github.com/AndrewFSee/Profile_Projects/blob/main/Kmeans_PairsTrading.ipynb)
+## [Grouping ETFs Using K-means Clustering and Analyzing Cointegration for Pairs Trading](https://github.com/AndrewFSee/Profile_Projects/blob/main/Kmeans_PairsTrading.ipynb)
 
 ### Objective:
 The goal of this project is to apply K-means clustering to group Exchange-Traded Funds (ETFs) based on their historical price movements and then analyze cointegration within these groups to identify potential pairs for trading strategies. Additionally, t-SNE (t-Distributed Stochastic Neighbor Embedding) was used to visualize the relationships between assets based on their cointegration.
@@ -163,7 +173,7 @@ The project successfully applied K-means clustering to group ETFs, analyzed coin
 
 ![](/images/project4.png)
 
-## [Project 5: Dimensionality Reduction of Stock Data Using Principal Component Analysis (PCA)](https://github.com/AndrewFSee/Profile_Projects/blob/main/Technical_Analysis_Features_PCA.ipynb)
+## [Dimensionality Reduction of Stock Data Using Principal Component Analysis (PCA)](https://github.com/AndrewFSee/Profile_Projects/blob/main/Technical_Analysis_Features_PCA.ipynb)
 
 ### Objective:
 The objective of this project is to apply Principal Component Analysis (PCA) to reduce the dimensionality of stock data while preserving its essential characteristics. The project aims to simplify data analysis, improve model performance, and uncover underlying patterns in the stock market data.
@@ -199,7 +209,7 @@ The project demonstrated the effectiveness of Principal Component Analysis for d
 
 ![](/images/project5.png)
 
-## [Project 6: Portfolio Optimization Using Markowitz Portfolio Theory](https://github.com/AndrewFSee/Profile_Projects/blob/main/Portfolio_Optimization.ipynb)
+## [Portfolio Optimization Using Markowitz Portfolio Theory](https://github.com/AndrewFSee/Profile_Projects/blob/main/Portfolio_Optimization.ipynb)
 
 ### Objective:
 The project aims to optimize an investment portfolio using Markowitz Portfolio Theory to achieve the best possible return for a given level of risk. By applying this classic theory, the project seeks to construct an efficient frontier of portfolios that balances risk and return, guiding investors in making informed investment decisions.
@@ -234,7 +244,7 @@ The project effectively utilized Markowitz Portfolio Theory to optimize asset al
 
 ![](/images/project6.png)
 
-## [Project 7: Stock Trading Using Proximal Policy Optimization (PPO)](https://github.com/AndrewFSee/Profile_Projects/blob/main/PPO_Stock_Returns.ipynb)
+## [Stock Trading Using Proximal Policy Optimization (PPO)](https://github.com/AndrewFSee/Profile_Projects/blob/main/PPO_Stock_Returns.ipynb)
 
 ### Objective:
 The project aims to develop and implement a stock trading strategy using Proximal Policy Optimization (PPO), a reinforcement learning algorithm. The goal is to train an agent that can make informed trading decisions to maximize cumulative returns while managing risk.
@@ -271,3 +281,25 @@ The PPO-based trading strategy demonstrated the ability to make informed trading
 The project successfully applied Proximal Policy Optimization to develop a stock trading strategy, leveraging reinforcement learning to make informed trading decisions. The PPO agent showed promising results in terms of returns and risk management. Future work could involve refining the model with additional features, experimenting with alternative reinforcement learning algorithms, and testing the strategy in live trading environments to further validate its effectiveness.
 
 ![](/images/project7.png)
+
+## [AI-Powered Stock Recommender System Using OpenAI API](https://github.com/AndrewFSee/Profile_Projects/blob/main/OpenAI_Stock%20Recommendation.ipynb)
+
+### Objective:
+This project aims to develop an AI-powered stock recommender system using the OpenAI API to analyze market data and generate actionable trading recommendations. The goal is to leverage natural language processing (NLP) and deep learning models to identify promising stocks based on historical data, financial metrics, and sentiment analysis.
+
+### Data Collection:
+Historical stock data, including daily open, high, low, and close prices, trading volume, and fundamental metrics such as P/E ratios and earnings reports, was sourced from various financial databases. Additionally, news articles were scraped using BeautifulSoup to enrich the dataset and provide context for stock recommendations.
+
+### Data Preprocessing:
+- Feature Engineering: Extracted features from both structured data (e.g., stock prices, financial ratios) and unstructured data (e.g., text sentiment) to create a comprehensive dataset.
+- Normalization: Numerical features were normalized to ensure consistency in scaling, while text data was tokenized and embedded using pre-trained language models.
+
+### Model Development:
+- Algorithm: The OpenAI API, specifically the GPT model, was utilized to analyze and interpret both numerical and textual data, offering predictions on the future performance of stocks. The model was fine-tuned to understand the specific nuances of financial data and generate targeted stock recommendations.
+- Prompt Engineering: Carefully crafted prompts were designed to guide the model in producing relevant and contextually accurate recommendations, with an emphasis on evaluating stock performance indicators.
+
+### Results:
+The AI-powered stock recommender system demonstrated strong predictive capabilities, offering actionable insights into stock selection. The system’s integration of both quantitative data and sentiment analysis provided a well-rounded approach to identifying investment opportunities. The model's performance metrics indicated its potential as a valuable tool for traders and investors.
+
+### Conclusion:
+The project successfully developed an AI-powered stock recommender system using the OpenAI API, providing a robust tool for making informed investment decisions. Future enhancements could include incorporating real-time data, refining NLP techniques for better sentiment analysis, and exploring other AI models to improve recommendation accuracy and breadth.
