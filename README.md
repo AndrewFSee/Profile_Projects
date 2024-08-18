@@ -10,6 +10,7 @@ Welcome and thank you for taking the time to explore my portfolio projects. As a
 ### - Stock Trading Using Proximal Policy Optimization (PPO)
 ### - AI-Powered Stock Recommender System Using OpenAI API
 
+
 ## [Predicting SPY Stock Returns Using an XGBoost Classifier](https://github.com/AndrewFSee/Profile_Projects/blob/main/Stock_Returns_Prediction.ipynb)
 ### Objective:
 This project aims to develop a classification model using XGBoost to predict the future direction of SPDR S&P 500 ETF Trust (SPY) returns—specifically, whether the return will be positive or negative. The goal is to provide actionable trading signals based on historical data and technical indicators.
