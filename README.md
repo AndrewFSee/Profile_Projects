@@ -301,7 +301,7 @@ Historical stock data, including daily open, high, low, and close prices, tradin
 ### Results:
 The AI-powered stock recommender system demonstrated strong predictive capabilities, offering actionable insights into stock selection. The system’s integration of both quantitative data and sentiment analysis provided a well-rounded approach to identifying investment opportunities. The model's performance metrics indicated its potential as a valuable tool for traders and investors.
 
-![](/images/project8.png)
-
 ### Conclusion:
 The project successfully developed an AI-powered stock recommender system using the OpenAI API, providing a robust tool for making informed investment decisions. Future enhancements could include incorporating real-time data, refining NLP techniques for better sentiment analysis, and exploring other AI models to improve recommendation accuracy and breadth.
+
+![](/images/project8.png)
