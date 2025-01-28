@@ -1,9 +1,9 @@
 Welcome and thank you for taking the time to explore my portfolio projects. As a passionate stock trader and Data Science enthusiast, I continuously work on projects that not only deepen my understanding of the markets but also enhance my skills in data-driven investing. I focus on developing innovative approaches to trading by leveraging the latest advancements in machine learning, deep learning, and traditional statistical methods. My portfolio showcases a diverse range of projects, from supervised and unsupervised learning to reinforcement learning and large language models, all aimed at refining my trading strategies and expanding my knowledge in this dynamic field.  I am currently working on projects that incorporate the OpenAI API into my algorithmic trading and quantitative research and furthering my studies in reinforcement learning and the Markov decision process.
 
 ## Projects
-### - Predicting SPY Stock Returns Using an XGBoost Classifier
-### - Simulating Stock Prices Using Monte Carlo Simulations of Geometric Brownian Motion
-### - Detecting Stock Market Regimes Using Hidden Markov Models
+### - [Predicting SPY Stock Returns Using an XGBoost Classifier](https://github.com/AndrewFSee/Profile_Projects/blob/main/Stock_Returns_Prediction.ipynb)
+### - [Simulating Stock Prices Using Monte Carlo Simulations of Geometric Brownian Motion](https://github.com/AndrewFSee/Profile_Projects/blob/main/Monte_Carlo_GBM.ipynb)
+### - [Detecting Stock Market Regimes Using Hidden Markov Models](https://github.com/AndrewFSee/Profile_Projects/blob/main/Hidden_Markov_Models_for_Market_Regimes.ipynb)
 ### - Grouping ETFs Using K-means Clustering and Analyzing Cointegration for Pairs Trading
 ### - Dimensionality Reduction of Stock Data Using Principal Component Analysis (PCA)
 ### - Portfolio Optimization Using Markowitz Portfolio Theory
