@@ -323,7 +323,7 @@ The AI-powered stock recommender system demonstrated strong predictive capabilit
 The project successfully developed an AI-powered stock recommender system using the OpenAI API, providing a robust tool for making informed investment decisions. Future enhancements could include incorporating real-time data, refining NLP techniques for better sentiment analysis, and exploring other AI models to improve recommendation accuracy and breadth.
 
 
-## - [Conversational Retrieval-Augmented Generation (RAG) system with PDF Upload using Langchain, Groq, and Streamlit](https://github.com/AndrewFSee/Profile_Projects/blob/main/RAG_pdf_simple.py)
+## [Conversational Retrieval-Augmented Generation (RAG) system with PDF Upload using Langchain, Groq, and Streamlit](https://github.com/AndrewFSee/Profile_Projects/blob/main/RAG_pdf_simple.py)
 
 ![](/images/RAG_PDF.png)
 
