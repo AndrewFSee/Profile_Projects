@@ -4,11 +4,12 @@ Welcome and thank you for taking the time to explore my portfolio projects. As a
 ### - [Predicting SPY Stock Returns Using an XGBoost Classifier](https://github.com/AndrewFSee/Profile_Projects/blob/main/Stock_Returns_Prediction.ipynb)
 ### - [Simulating Stock Prices Using Monte Carlo Simulations of Geometric Brownian Motion](https://github.com/AndrewFSee/Profile_Projects/blob/main/Monte_Carlo_GBM.ipynb)
 ### - [Detecting Stock Market Regimes Using Hidden Markov Models](https://github.com/AndrewFSee/Profile_Projects/blob/main/Hidden_Markov_Models_for_Market_Regimes.ipynb)
-### - Grouping ETFs Using K-means Clustering and Analyzing Cointegration for Pairs Trading
-### - Dimensionality Reduction of Stock Data Using Principal Component Analysis (PCA)
-### - Portfolio Optimization Using Markowitz Portfolio Theory
-### - Stock Trading Using Proximal Policy Optimization (PPO)
-### - AI-Powered Stock Recommender System Using OpenAI API
+### - [Grouping ETFs Using K-means Clustering and Analyzing Cointegration for Pairs Trading](https://github.com/AndrewFSee/Profile_Projects/blob/main/Kmeans_PairsTrading.ipynb)
+### - [Dimensionality Reduction of Stock Data Using Principal Component Analysis (PCA)](https://github.com/AndrewFSee/Profile_Projects/blob/main/Technical_Analysis_Features_PCA.ipynb)
+### - [Portfolio Optimization Using Markowitz Portfolio Theory](https://github.com/AndrewFSee/Profile_Projects/blob/main/Portfolio_Optimization.ipynb)
+### - [Stock Trading Using Proximal Policy Optimization (PPO)](https://github.com/AndrewFSee/Profile_Projects/blob/main/PPO_Stock_Returns.ipynb)
+### - [AI-Powered Stock Recommender System Using OpenAI API](https://github.com/AndrewFSee/Profile_Projects/blob/main/OpenAI_Stock%20Recommendation.ipynb)
+### - [Conversational Retrieval-Augmented Generation (RAG) system with PDF Upload using Langchain, Groq, and Streamlit](https://github.com/AndrewFSee/Profile_Projects/blob/main/RAG_pdf_simple.py)
 
 
 ## [Predicting SPY Stock Returns Using an XGBoost Classifier](https://github.com/AndrewFSee/Profile_Projects/blob/main/Stock_Returns_Prediction.ipynb)
@@ -315,4 +316,52 @@ The AI-powered stock recommender system demonstrated strong predictive capabilit
 
 ### Conclusion:
 The project successfully developed an AI-powered stock recommender system using the OpenAI API, providing a robust tool for making informed investment decisions. Future enhancements could include incorporating real-time data, refining NLP techniques for better sentiment analysis, and exploring other AI models to improve recommendation accuracy and breadth.
+
+
+## - [Conversational Retrieval-Augmented Generation (RAG) system with PDF Upload using Langchain, Groq, and Streamlit](https://github.com/AndrewFSee/Profile_Projects/blob/main/RAG_pdf_simple.py)
+
+![](/images/RAG_PDF.png)
+
+### Objective:
+This project aims to create a Conversational Retrieval-Augmented Generation (RAG) system that allows users to upload PDF documents, extract their content, and interact with it via a chatbot interface. The system uses LangChain and integrates advanced capabilities like history-aware question reformulation and context-driven response generation, enabling seamless and intelligent interactions with document data.
+
+### Functionality:
+- Users can upload one or more PDFs to the system.
+- The system processes the PDFs, extracts their content, and creates embeddings to enable efficient text retrieval.
+- Users can ask questions about the uploaded documents, and the chatbot provides accurate, context-aware answers by leveraging retrieval-augmented generation.
+- The system maintains and utilizes a conversational history to enhance the quality and relevance of responses.
+  
+### Workflow:
+1. Document Loading and Preprocessing:
+- Uploaded PDF files are processed using PyPDFLoader to extract their content.
+- The content is split into manageable chunks using RecursiveCharacterTextSplitter to ensure optimal performance during embedding creation and retrieval.
+  
+2. Embeddings and Vector Store:
+- Document chunks are converted into vector representations using the HuggingFaceEmbeddings model (all-MiniLM-L6-v2).
+- These embeddings are stored in a FAISS vector store, enabling fast and accurate document retrieval.
+  
+3. Retrieval-Augmented Generation (RAG):
+- The system integrates a retrieval chain with a history-aware retriever to reformulate user queries based on chat history.
+- A contextualized QA chain generates concise answers by combining retrieved document content with the user’s question.
+  
+4. Conversational Memory:
+- Chat history is persistently managed using ChatMessageHistory and session-based state tracking to ensure a coherent flow of interaction.
+- The system dynamically reformulates questions to handle references to prior conversation context.
+  
+5. User Interaction:
+- Users interact with the system via a Streamlit interface.
+- Key inputs include the Groq API key, uploaded PDFs, and user questions.
+- The chatbot provides responses alongside the complete chat history for transparency and usability.
+  
+### Results:
+- The system provides accurate, concise, and context-aware answers to user queries about the content of uploaded PDFs.
+- The incorporation of conversational memory ensures that responses are tailored to the context of the ongoing interaction.
+- By leveraging the Groq language model (Gemma2-9b-It), the chatbot offers high-quality natural language understanding and response generation.
+  
+### Conclusion:
+The Conversational RAG system successfully combines document retrieval, conversational memory, and natural language understanding to provide an intelligent interface for interacting with uploaded PDFs. Future improvements could include:
+- Adding support for other document types (e.g., Word, Excel).
+- Implementing real-time document updates.
+- Enhancing the embeddings model to capture more complex document semantics.
+- Improving scalability to handle larger datasets or concurrent users.
 
