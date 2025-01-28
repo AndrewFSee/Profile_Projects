@@ -12,7 +12,9 @@ Welcome and thank you for taking the time to explore my portfolio projects. As a
 ### - [Conversational Retrieval-Augmented Generation (RAG) system with PDF Upload using Langchain, Groq, and Streamlit](https://github.com/AndrewFSee/Profile_Projects/blob/main/RAG_pdf_simple.py)
 
 ---
+&nbsp;
 
+&nbsp;
 
 
 ## [Predicting SPY Stock Returns Using an XGBoost Classifier](https://github.com/AndrewFSee/Profile_Projects/blob/main/Stock_Returns_Prediction.ipynb)
