@@ -11,7 +11,7 @@ Welcome and thank you for taking the time to explore my portfolio projects. As a
 ### - [AI-Powered Stock Recommender System Using OpenAI API](https://github.com/AndrewFSee/Profile_Projects/blob/main/OpenAI_Stock%20Recommendation.ipynb)
 ### - [Conversational Retrieval-Augmented Generation (RAG) system with PDF Upload using Langchain, Groq, and Streamlit](https://github.com/AndrewFSee/Profile_Projects/blob/main/RAG_pdf_simple.py)
 
-
+---
 
 
 
