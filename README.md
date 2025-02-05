@@ -1,8 +1,9 @@
-Welcome and thank you for taking the time to explore my portfolio projects. As a passionate stock trader and Data Science enthusiast, I continuously work on projects that not only deepen my understanding of the markets but also enhance my skills in data-driven investing. I focus on developing innovative approaches to trading by leveraging the latest advancements in machine learning, deep learning, and traditional statistical methods. My portfolio showcases a diverse range of projects, from supervised and unsupervised learning to reinforcement learning and large language models, all aimed at refining my trading strategies and expanding my knowledge in this dynamic field.  I am currently working on projects that incorporate the OpenAI API into my algorithmic trading and quantitative research and furthering my studies in reinforcement learning and the Markov decision process.
+Welcome and thank you for taking the time to explore my portfolio projects. As a passionate stock trader and Data Science enthusiast, I continuously work on projects that not only deepen my understanding of the markets but also enhance my skills in data-driven investing. I focus on developing innovative approaches to trading by leveraging the latest advancements in machine learning, deep learning, and traditional statistical methods. My portfolio showcases a diverse range of projects, from supervised and unsupervised learning to reinforcement learning and large language models, all aimed at refining my trading strategies and expanding my knowledge in this dynamic field.  I am currently working on projects that incorporate the OpenAI API into my algorithmic trading and quantitative research and furthering my studies in reinforcement learning and the Markov decision process.  Please note that none of the projects presented here should be considered financial advice.
 
 ## Projects
 ### - [Predicting SPY Stock Returns Using an XGBoost Classifier](https://github.com/AndrewFSee/Profile_Projects/blob/main/Stock_Returns_Prediction.ipynb)
 ### - [Simulating Stock Prices Using Monte Carlo Simulations of Geometric Brownian Motion](https://github.com/AndrewFSee/Profile_Projects/blob/main/Monte_Carlo_GBM.ipynb)
+### - [Skewness-based Trading Strategy Using K-means Clustering](https://github.com/AndrewFSee/Profile_Projects/blob/main/K-Means_Clustering_Stock_Returns.ipynb)
 ### - [Detecting Stock Market Regimes Using Hidden Markov Models](https://github.com/AndrewFSee/Profile_Projects/blob/main/Hidden_Markov_Models_for_Market_Regimes.ipynb)
 ### - [Grouping ETFs Using K-means Clustering and Analyzing Cointegration for Pairs Trading](https://github.com/AndrewFSee/Profile_Projects/blob/main/Kmeans_PairsTrading.ipynb)
 ### - [Dimensionality Reduction of Stock Data Using Principal Component Analysis (PCA)](https://github.com/AndrewFSee/Profile_Projects/blob/main/Technical_Analysis_Features_PCA.ipynb)
@@ -98,6 +99,73 @@ The Monte Carlo simulations produced a range of potential future stock price tra
 
 ### Conclusion:
 The project effectively utilized Monte Carlo simulations of Geometric Brownian Motion to model and predict stock prices, providing valuable insights into future price behavior and risk assessment. Future work could involve refining the model with additional factors, such as jumps or mean-reversion processes, and integrating alternative simulation techniques for improved accuracy.
+
+
+## - [Skewness-based Trading Strategy Using K-means Clustering](https://github.com/AndrewFSee/Profile_Projects/blob/main/K-Means_Clustering_Stock_Returns.ipynb)
+
+![](/images/Kmeans_returns.png)
+
+### Objective
+This project applies K-Means clustering to identify distinct market regimes based on the skewness of stock returns. By segmenting the market into clusters with varying skewness characteristics, the goal is to detect fat-tail events and optimize trading strategies by identifying conditions favorable for long or short positions.
+
+### Methodology
+Clustering Approach
+
+- K-Means Clustering: Used to group market conditions based on returns skewness and other statistical features.
+- Skewness as a Key Feature: Skewness was used to identify asymmetric return distributions, highlighting fat-tail events where extreme positive or negative movements are more likely.
+  
+Trading Strategy Based on Skewness
+- Go Long on clusters where skewness > 0.75, since positively skewed distributions indicate upside potential.
+- Go Short on clusters where skewness < -1, as negatively skewed distributions suggest higher downside risk.
+- Remain Neutral for all other clusters.
+  
+### Data Collection
+Historical stock market data was collected, including:
+
+- Price Data: Daily open, high, low, and close (OHLC) prices.
+- Returns: Daily returns to capture the market’s movement.
+- Volatility Metrics: Included rolling volatility measures like Volatility14 to assess market conditions.
+  
+### Data Preprocessing
+
+- Feature Engineering: Derived statistical features such as rolling mean, standard deviation, skewness, and kurtosis to better segment market conditions.
+- Normalization: Standardized feature values to ensure proper cluster formation.
+- Clustering & Labeling: Applied K-Means clustering on the preprocessed dataset to segment the market into regimes.
+  
+### Model Development
+
+- Optimal Cluster Selection: Determined the best number of clusters using the Elbow Method and Silhouette Score.
+- Cluster Interpretation: Analyzed cluster characteristics to understand their relationship with different market phases.
+- Trade Signal Generation: Mapped clusters to trading signals based on skewness thresholds.
+  
+### Evaluation
+
+#### Cluster Insights
+- Clusters 0, 5, and 7 were identified as bullish, exhibiting positive skewness, leading to long positions.
+- Cluster 3 was identified as bearish, with significantly negative skewness, making it a strong shorting opportunity.
+- Cluster 1 also showed high volatility but lacked strong skewness, suggesting a need for further investigation or sub-clustering.
+  
+#### Backtesting the Strategy
+- Performance Comparison: The strategy was backtested against a buy-and-hold benchmark.
+- Returns: The strategy achieved 106.13%, outperforming the 40% return of the buy-and-hold strategy over the same period.
+- Risk-Adjusted Returns:
+  - Strategy Sharpe Ratio: 2.556
+  - Buy-and-Hold Sharpe Ratio: 1.183
+  - The strategy provided higher returns with lower risk and better downside protection.
+
+### Results & Insights
+- The clustering approach successfully segmented market conditions based on skewness and volatility.
+- The strategy effectively captured positive returns while minimizing downside exposure.
+- The results suggest that fat-tail events identified through clustering can be exploited for better trading decisions.
+
+### Conclusion & Future Improvements
+This project demonstrated that returns skewness and K-Means clustering can be used to detect market regimes and develop profitable trading strategies. Future enhancements include:
+
+- Incorporating Kurtosis: To better differentiate extreme events.
+- Dynamic Cluster Adjustments: Periodically updating clusters using rolling window techniques.
+- Regime Detection Validation: Cross-validating with Hidden Markov Models (HMMs) to refine regime identification.
+- Transaction Cost Analysis: To assess the real-world viability of the strategy.
+- Integration into Live Trading: Deploying the strategy in a real-time trading system for execution and monitoring.
 
 
 ## [Detecting Stock Market Regimes Using Hidden Markov Models](https://github.com/AndrewFSee/Profile_Projects/blob/main/Hidden_Markov_Models_for_Market_Regimes.ipynb)
