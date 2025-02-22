@@ -526,3 +526,81 @@ The Conversational RAG system successfully combines document retrieval, conversa
 - Enhancing the embeddings model to capture more complex document semantics.
 - Improving scalability to handle larger datasets or concurrent users.
 
+
+# Financial Report on NVDA, GOOGL, and TSLA
+
+## Overview
+
+This report presents a comprehensive analysis of NVIDIA Corporation (NVDA), Alphabet Inc. (GOOGL), and Tesla, Inc. (TSLA), integrating both fundamental and technical analyses. Spanning market figures, financial ratios, technical charts, and the latest corporate developments, the report outlines a framework for understanding each stock's current and potential future performance.
+
+## Comparative Analysis
+
+### Fundamental Ratios and Data
+
+| Metric                  | NVDA        | GOOGL       | TSLA        |
+|-------------------------|-------------|-------------|-------------|
+| Current Price ($)       | 134.43      | 179.66      | 337.80      |
+| P/E Ratio               | 53.13       | 22.32       | 166.40      |
+| Forward P/E             | 32.63       | 20.05       | 104.26      |
+| Dividends ($)           | 0.03        | 0.45        | N/A         |
+| Price to Book           | 49.99       | 6.75        | 14.90       |
+| Debt/Equity Ratio       | 15.52       | 8.66        | 18.49       |
+| Return on Equity (ROE)  | 127.21%     | 32.91%      | 10.42%      |
+| 6-Month % Change        | 8.66%       | 9.95%       | 60.35%      |
+
+**Comments:**
+
+- **P/E and Forward P/E Ratios**: Highlighting high growth potential, TSLA's P/E ratio significantly exceeds its peers, suggesting investor confidence in future earnings.
+- **ROE and Debt/Equity**: NVDA shows robust profitability with its substantial ROE. The high debt/equity ratio in TSLA reflects its aggressive expansion strategy.
+  
+## Correlation and Risks
+
+Analyzed correlations suggest strategic investment patterns and shared market influences:
+
+- **High Correlation between TSLA and GOOGL (0.903)**: Reflects impact alignment from macroeconomic shifts affecting tech and mobility sectors.
+- **Moderate Correlation between NVDA and TSLA (0.426)**: Demonstrates differentiated yet intersecting technological focus areas.
+
+## Technical Analysis
+
+![Normalized Prices](normalized_prices.png)
+
+### NVIDIA Corporation (NVDA)
+
+- **Key Indicators**: RSI indicates potential overbought conditions, while Bollinger Bands point towards increasing market volatility. MACD reveals solid momentum support, yet vigilance is advised around earnings surprises.
+- **Market Patterns**: Strategic levels identified hint at probable bullish breakouts, bolstered by AI-driven initiatives.
+
+### Alphabet Inc. (GOOGL)
+
+- **Technicals**: RSI and MACD align with stable momentum trends, while moving averages underscore confidence in sustained investor sentiment.
+- **Market Dynamics**: Large-scale AI investments contribute to predictable, relatively steady price movements, prompting potential buy signals at strategic points.
+
+### Tesla, Inc. (TSLA)
+
+- **Interpretations**: RSI indicates potential corrections ahead as it nears overbought territories. MACD and chart patterns suggest preparation for further breakout opportunities.
+- **Market Context**: Compelling upward momentum is expected to continue, tempered by operational challenges such as labor disputes.
+
+## Recent News Summary and Impact
+
+### NVIDIA Corporation (NVDA)
+
+NVIDIA's foray into AI solutions highlights core strengths in addressing expanding market needs, with potential turbulences tied to anticipated earnings insights. A significant boost has been forecasted by analysts, reinforcing its tech leadership.
+
+### Alphabet Inc. (GOOGL)
+
+Strategically expanding in AI with a $75 billion investment, Alphabet underscores its sustainable growth amid reallocation by prominent investors. This positions it as a key entity in the technological future, aligning well with its financial consistency.
+
+### Tesla, Inc. (TSLA)
+
+Tesla's global interest expansion, particularly in India, combines with automotive policy support to signal robust future prospects. Domestic labor issues may pose temporary market hesitancy, yet international pursuits provide substantial offsets.
+
+## Future Scenarios
+
+- **NVDA**: Poised for growth as AI integration surges, potential volatility around earnings periods could prompt distinct trading opportunities.
+- **GOOGL**: A conservative yet strategic play, underpinned by massive AI investments and stable market presence, likely to yield steady returns.
+- **TSLA**: Positioned for aggressive upside as international market incursions mature and environmental policies favor EV adoption, although closely tied to operational execution.
+
+## Disclosure
+
+This report is intended for informational purposes only and does not constitute financial advice. Please consult a financial advisor for personalized recommendations tailored to your individual circumstances. 
+
+Legal and ethical compliance matters have been considered, and assumptions are based on data and insights up to the current date of October 2023.
