@@ -12,6 +12,7 @@ Welcome and thank you for taking the time to explore my portfolio projects. As a
 ### - [AI-Powered Stock Recommender System Using OpenAI API](https://github.com/AndrewFSee/Profile_Projects/blob/main/OpenAI_Stock%20Recommendation.ipynb)
 ### - [SQL Executor with LLM for Economic Data from FRED](https://github.com/AndrewFSee/Profile_Projects/blob/main/LangChain_SQLiteDB.ipynb)
 ### - [Conversational Retrieval-Augmented Generation (RAG) system with PDF Upload using Langchain, Groq, and Streamlit](https://github.com/AndrewFSee/Profile_Projects/blob/main/RAG_pdf_simple.py)
+### - [Multi-Agent Financial Report Generation](https://github.com/AndrewFSee/Profile_Projects/blob/main/financial_report_app.py)
 
 ---
 &nbsp;
@@ -527,6 +528,92 @@ The Conversational RAG system successfully combines document retrieval, conversa
 - Improving scalability to handle larger datasets or concurrent users.
 
 
+## - [Multi-Agent Financial Report Generation](https://github.com/AndrewFSee/Profile_Projects/blob/main/financial_report_app.py)
+
+![](/images/multi_agent_financial_report_before.png)
+
+### Objective:
+The objective of this project is to develop an AI-powered financial report generation system that utilizes multi-agent collaboration to automate the creation of detailed stock analysis reports. The system integrates fundamental and technical analysis, news aggregation, and scenario-based forecasting, ensuring high-quality insights for investors and analysts. The multi-agent architecture enables specialized AI agents to handle different aspects of the report, while a review pipeline ensures accuracy, completeness, and consistency.
+
+### Functionality:
+1. Stock Analysis Automation:
+- The system generates comprehensive financial reports based on user-specified stock tickers.
+- It analyzes both fundamental and technical indicators, stock correlations, news sentiment, and future market scenarios.
+  
+2. Multi-Agent AI Collaboration:
+- Various specialized AI agents work together, each handling distinct tasks such as data collection, analysis, and report writing.
+- The agents include Financial Analysts, Technical Analysts, Researchers, Writers, and Reviewers.
+  
+3. Automated Review and Quality Assurance:
+- A multi-step review process ensures that generated reports are accurate, complete, and well-structured.
+- Reviewers check for data consistency, compliance, alignment between textual descriptions and numerical data, and overall completeness.
+  
+4. Report Export and Documentation:
+- Finalized reports are formatted and saved as markdown (.md) files, making them easy to read and share.
+
+5. User-Friendly Interface (Streamlit):
+- Users interact with the system via a simple web interface, entering stock tickers to initiate report generation.
+- A button-click triggers the analysis workflow, and the output is named with the execution date for easy tracking.
+
+### Workflow:
+1. User Input and Task Initiation:
+- The user enters stock tickers into the Streamlit interface and initiates report generation.
+- The system assigns tasks to the appropriate AI agents based on predefined roles.
+
+2. Financial and Technical Data Collection:
+- The Financial Assistant retrieves fundamental data such as P/E ratio, EPS, revenue, and cash flow.
+- The Technical Analysis Assistant calculates indicators like moving averages, RSI, MACD, and Bollinger Bands.
+
+3. News Aggregation and Sentiment Analysis:
+- The Researcher Agent gathers recent financial news related to the selected stocks.
+- A sentiment analysis module evaluates whether the news is positive, neutral, or negative.
+
+4. Report Compilation and Writing:
+- The Writer Agent compiles all data into a structured financial report.
+- It organizes sections such as Company Overview, Fundamental Analysis, Technical Indicators, Market Trends, and Future Scenarios.
+
+5. Automated Multi-Agent Review Process:
+- Technical Reviewer: Ensures accuracy of calculations and interpretations.
+- Legal Reviewer: Checks compliance with financial disclosure rules.
+- Consistency Reviewer: Verifies data consistency across sections.
+- Text Alignment Reviewer: Ensures textual insights match numerical data.
+- Completion Reviewer: Confirms all required sections are included.
+- Meta Reviewer: Aggregates feedback and gives final approval.
+
+6. Final Report Export:
+- Once approved, the Export Assistant saves the report in markdown format with a timestamped filename.
+
+### User Interaction Flow:
+1. User Input:
+- The user enters stock tickers in the Streamlit app (e.g., “AAPL, TSLA, MSFT”).
+
+2. Automated Report Generation:
+- The AI agents retrieve data, analyze trends, summarize news, and compile insights.
+
+3. Quality Review & Finalization:
+- Multiple review agents validate accuracy and coherence before finalizing the report.
+
+4. Report Export & Delivery:
+- The completed report is saved as an .md file and made available for download.
+
+### Results:
+The system generates comprehensive, AI-driven stock reports that offer:
+✅ Fundamental and technical insights for informed decision-making.
+✅ Automated, structured financial analysis without manual effort.
+✅ Accurate, consistent, and reviewed content through multi-agent collaboration.
+✅ Seamless user experience via an interactive Streamlit dashboard.
+
+### Conclusion & Future Enhancements:
+This project successfully demonstrates how multi-agent AI systems can automate financial analysis and report generation. Potential future improvements include:
+- Expanding financial data sources to include real-time updates and alternative data.
+- Enhancing news analysis with more advanced sentiment scoring and trend detection.
+- Integrating forecasting models to provide predictive analytics alongside historical insights.
+- Supporting multiple report formats (e.g., PDF, HTML) for broader usability.
+
+By leveraging LLMs and multi-agent collaboration, this system provides a scalable, AI-powered approach to financial reporting, enabling investors, analysts, and businesses to access high-quality stock insights efficiently. 🚀
+
+# Example Report
+
 # Financial Report on NVDA, GOOGL, and TSLA
 
 ## Overview
@@ -562,7 +649,7 @@ Analyzed correlations suggest strategic investment patterns and shared market in
 
 ## Technical Analysis
 
-![Normalized Prices](normalized_prices.png)
+![](/images/normailized_prices.png)
 
 ### NVIDIA Corporation (NVDA)
 
