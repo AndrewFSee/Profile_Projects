@@ -598,9 +598,13 @@ The objective of this project is to develop an AI-powered financial report gener
 
 ### Results:
 The system generates comprehensive, AI-driven stock reports that offer:
+
 ✅ Fundamental and technical insights for informed decision-making.
+
 ✅ Automated, structured financial analysis without manual effort.
+
 ✅ Accurate, consistent, and reviewed content through multi-agent collaboration.
+
 ✅ Seamless user experience via an interactive Streamlit dashboard.
 
 ### Conclusion & Future Enhancements:
@@ -649,7 +653,7 @@ Analyzed correlations suggest strategic investment patterns and shared market in
 
 ## Technical Analysis
 
-![](/images/normailized_prices.png)
+![](/images/normalized_prices.png)
 
 ### NVIDIA Corporation (NVDA)
 
