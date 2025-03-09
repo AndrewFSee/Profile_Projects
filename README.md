@@ -2,6 +2,7 @@ Welcome and thank you for taking the time to explore my portfolio projects. As a
 
 ## Projects
 ### - [Predicting SPY Stock Returns Using an XGBoost Classifier](https://github.com/AndrewFSee/Profile_Projects/blob/main/Stock_Returns_Prediction.ipynb)
+### - [S&P500 Short-Term Volatility Prediction with GARCH, LSTM, and LSTM-GARCH Hybrid Models](https://github.com/AndrewFSee/Profile_Projects/blob/main/S%26P500_Volatility_V0.ipynb)
 ### - [Simulating Stock Prices Using Monte Carlo Simulations of Geometric Brownian Motion](https://github.com/AndrewFSee/Profile_Projects/blob/main/Monte_Carlo_GBM.ipynb)
 ### - [Skewness-based Trading Strategy Using K-means Clustering](https://github.com/AndrewFSee/Profile_Projects/blob/main/K-Means_Clustering_Stock_Returns.ipynb)
 ### - [Detecting Stock Market Regimes Using Hidden Markov Models](https://github.com/AndrewFSee/Profile_Projects/blob/main/Hidden_Markov_Models_for_Market_Regimes.ipynb)
@@ -51,6 +52,40 @@ The XGBoost classifier demonstrated strong performance in predicting the directi
 
 ### Conclusion:
 The project successfully applied an XGBoost classifier to forecast SPY return directions, offering a useful tool for investors looking to make informed trading decisions. Future work could involve integrating additional data sources, refining feature engineering, and exploring other classification algorithms to further enhance prediction accuracy.
+
+## [Predicting SPY Stock Returns Using an XGBoost Classifier](https://github.com/AndrewFSee/Profile_Projects/blob/main/Stock_Returns_Prediction.ipynb)
+
+![](/images/SP500_Volatility.png)
+
+### Objective:
+This project aims to predict the volatility of the S&P 500 index using three different modeling techniques: GARCH, LSTM, and a hybrid LSTM-GARCH model. The goal is to provide accurate volatility forecasts that can help in risk management and inform trading strategies based on market volatility dynamics.
+
+### Data Collection:
+Historical price data for the S&P 500 index, including daily open, high, low, close prices, and trading volume, was sourced from Yahoo Finance. Additionally, VIX data was used as a measure of market expectations for future volatility to enrich the dataset and provide more comprehensive volatility insights.
+
+### Data Preprocessing:
+
+- Feature Engineering: Various technical features were derived from the historical price data, including log transformed data, volatility measures, and lagged returns. These features were used to model the underlying volatility structure of the S&P 500.
+- Normalization: Data was scaled appropriately to ensure model stability and improve performance, particularly for the LSTM model, which is sensitive to input feature scaling.
+- Train-Test Split: The dataset was divided into training and testing sets, with careful attention to temporal ordering to preserve the time-series nature of the data.
+  
+### Model Development:
+
+- GARCH Model: The Generalized Autoregressive Conditional Heteroskedasticity (GARCH) model was employed to capture the time-varying volatility and volatility clustering in the S&P 500 returns. It provided a baseline model to understand the volatility dynamics using traditional econometric techniques.
+- LSTM Model: A Long Short-Term Memory (LSTM) neural network was implemented to capture the non-linear relationships and long-term dependencies in the time-series data. LSTM's ability to learn complex patterns was leveraged to model volatility without assuming linearity in the data.
+- LSTM-GARCH Hybrid Model: The hybrid LSTM-GARCH model was developed by combining the strengths of both models. The GARCH model captured the linear volatility structure, while the LSTM model learned the non-linear relationships, with the outputs of the LSTM integrated into the GARCH framework for enhanced predictive performance.
+  
+### Hyperparameter Tuning:
+Key hyperparameters for both the LSTM and GARCH models were optimized using cross-validation techniques to ensure the best model fit. For the LSTM, tuning involved adjusting the number of layers, neurons, and learning rate, while for GARCH, optimal lag lengths and error distributions were chosen.
+
+### Evaluation:
+- Metrics: Model performance was evaluated using metrics such as Mean Squared Error (MSE), Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and out-of-sample prediction accuracy. Additionally, a comparison of forecasted volatility against actual realized volatility was conducted to assess model robustness.
+  
+### Results:
+The LSTM-GARCH hybrid model outperformed both the individual GARCH and LSTM models in terms of predictive accuracy, showcasing its ability to leverage both linear and non-linear patterns in volatility prediction. The GARCH model provided a solid foundation, while the LSTM captured complex market dynamics that the GARCH model could not, resulting in improved volatility forecasts.
+
+### Conclusion:
+This project successfully demonstrated the potential of using a hybrid LSTM-GARCH model to predict S&P 500 volatility. The hybrid approach proved to be more effective than either model in isolation, offering a powerful tool for risk management and decision-making in volatile market conditions. Future work could explore incorporating additional macroeconomic variables, enhancing model interpretability, and applying the approach to other financial indices or asset classes to further validate its robustness.
 
 
 ## [Simulating Stock Prices Using Monte Carlo Simulations of Geometric Brownian Motion](https://github.com/AndrewFSee/Profile_Projects/blob/main/Monte_Carlo_GBM.ipynb)
