@@ -53,7 +53,7 @@ The XGBoost classifier demonstrated strong performance in predicting the directi
 ### Conclusion:
 The project successfully applied an XGBoost classifier to forecast SPY return directions, offering a useful tool for investors looking to make informed trading decisions. Future work could involve integrating additional data sources, refining feature engineering, and exploring other classification algorithms to further enhance prediction accuracy.
 
-## [Predicting SPY Stock Returns Using an XGBoost Classifier](https://github.com/AndrewFSee/Profile_Projects/blob/main/Stock_Returns_Prediction.ipynb)
+## [S&P500 Short-Term Volatility Prediction with GARCH, LSTM, and LSTM-GARCH Hybrid Models](https://github.com/AndrewFSee/Profile_Projects/blob/main/S%26P500_Volatility_V0.ipynb)
 
 ![](/images/SP500_Volatility.png)
 
