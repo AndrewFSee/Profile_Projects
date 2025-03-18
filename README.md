@@ -1,7 +1,7 @@
 Welcome and thank you for taking the time to explore my portfolio projects. As a passionate stock trader and Data Science enthusiast, I continuously work on projects that not only deepen my understanding of the markets but also enhance my skills in data-driven investing. I focus on developing innovative approaches to trading by leveraging the latest advancements in machine learning, deep learning, and traditional statistical methods. My portfolio showcases a diverse range of projects, from supervised and unsupervised learning to reinforcement learning and large language models, all aimed at refining my trading strategies and expanding my knowledge in this dynamic field.  I prefer to use data obtained from free sources like `yfinance` to ensure that my notebooks are easily reproducible. However, some of the strategies discussed in my work require more granular data, which typically comes with a fee. While I cannot redistribute this data due to licensing restrictions, it's important to note that many of these strategies would perform better with higher-frequency data, especially when resampled into non-standard time intervals (e.g., 7-minute, 22-minute bars, etc. hint hint). I am currently working on projects that incorporate the OpenAI API into my algorithmic trading and quantitative research and furthering my studies in reinforcement learning and the Markov decision process.  Please note that none of the projects presented here should be considered financial advice.
 
 ## Projects
-### - [Predicting SPY Stock Returns Using an XGBoost Classifier](https://github.com/AndrewFSee/Profile_Projects/blob/main/Stock_Returns_Prediction.ipynb)
+### - [Predicting S&P 500 Returns Using Machine Learning Models: A Comparative Analysis of Decision Tree, Random Forest, XGBoost, and Blended Strategies](https://github.com/AndrewFSee/Profile_Projects/blob/main/Classifiers_to_Forecast_Stock_Movements_V0.ipynb)
 ### - [S&P500 Short-Term Volatility Prediction with GARCH, LSTM, and LSTM-GARCH Hybrid Models](https://github.com/AndrewFSee/Profile_Projects/blob/main/S%26P500_Volatility_V0.ipynb)
 ### - [Simulating Stock Prices Using Monte Carlo Simulations of Geometric Brownian Motion](https://github.com/AndrewFSee/Profile_Projects/blob/main/Monte_Carlo_GBM.ipynb)
 ### - [Skewness-based Trading Strategy Using K-means Clustering](https://github.com/AndrewFSee/Profile_Projects/blob/main/K-Means_Clustering_Stock_Returns.ipynb)
@@ -21,37 +21,38 @@ Welcome and thank you for taking the time to explore my portfolio projects. As a
 &nbsp;
 
 
-## [Predicting SPY Stock Returns Using an XGBoost Classifier](https://github.com/AndrewFSee/Profile_Projects/blob/main/Stock_Returns_Prediction.ipynb)
+## [Predicting S&P 500 Returns Using Machine Learning Models: A Comparative Analysis of Decision Tree, Random Forest, XGBoost, and Blended Strategies](https://github.com/AndrewFSee/Profile_Projects/blob/main/Classifiers_to_Forecast_Stock_Movements_V0.ipynb)
 
-![](/images/project1.png)
+![](/images/Classifiers_Predict_SPY.png)
 
 ### Objective:
-This project aims to develop a classification model using XGBoost to predict the future direction of SPDR S&P 500 ETF Trust (SPY) returns—specifically, whether the return will be positive or negative. The goal is to provide actionable trading signals based on historical data and technical indicators.
+This project aims to predict the daily returns of the S&P 500 (SPY) index using various machine learning classifiers, including Decision Tree, Random Forest, XGBoost, and a Blended Model. The goal is to develop a robust model capable of outperforming a buy-and-hold strategy by predicting market movements and generating profitable, risk-adjusted returns.
 
 ### Data Collection:
-Historical stock price data for SPY, including daily open, high, low, close prices, and trading volume, was sourced from Yahoo Finance. Technical indicators, such as moving averages, relative strength index (RSI), and volatility measures, were calculated to enrich the dataset and provide additional predictive features.
+Historical price data for the S&P 500 index (SPY) was sourced from Yahoo Finance, covering daily open, high, low, close prices, and trading volume. Additional financial features such as the VIX (volatility index) and technical indicators like moving averages, NATR, and Bollinger Bands were incorporated to enrich the dataset and improve the predictive capabilities of the models.
 
 ### Data Preprocessing:
-
-- Feature Engineering: Created features based on technical indicators and lagged returns to capture market trends and dynamics. The target variable was defined as a binary classification: 1 for positive returns and 0 for negative returns over a specified time horizon.
-- Normalization: Features were normalized to ensure consistent scaling and enhance model performance.
-- Train-Test Split: The dataset was split into training and testing sets to evaluate the model’s performance and generalizability.
+* Feature Engineering: Technical indicators, including NATR, Kalman-filtered returns, and Bollinger Bands, were derived from historical price data to capture trends and volatility. Lagged returns were also included to help the model predict future price movements.
+* Normalization: Data was normalized to ensure stability and improve model performance, particularly for models like XGBoost and Random Forest that are sensitive to feature scaling.
+* Train-Test Split: The dataset was split into training and testing sets, maintaining temporal ordering to preserve the time-series nature of the data.
   
 ### Model Development:
+* Decision Tree Classifier: A baseline model was developed using a Decision Tree, which provides a simple approach to understanding feature importance and making predictions based on splits in the data.
+* Random Forest Classifier: A more robust model compared to the Decision Tree, the Random Forest model was used to reduce overfitting and improve performance by aggregating predictions from multiple decision trees.
+* XGBoost Classifier: An optimized ensemble model using gradient boosting techniques, XGBoost was employed to further enhance performance, particularly for handling complex, non-linear relationships in the data.
+* Blended Model: A meta-model approach, the Blended Model combined predictions from multiple classifiers (including Decision Tree, Random Forest, and XGBoost) to leverage the strengths of each and improve overall accuracy.
 
-- Algorithm: An XGBoost classifier was employed for its effectiveness in handling binary classification problems and its ability to model complex patterns and interactions.
-- Hyperparameter Tuning: Optimized key parameters such as learning rate, number of trees, maximum depth, and regularization terms using cross-validation techniques.
-- Feature Importance: Analyzed feature importance scores to understand the contribution of each feature to the classification decision.
-  
+### Hyperparameter Tuning:
+Hyperparameters for each model were tuned using techniques such as Randomized Search and Grid Search. Parameters like maximum depth, learning rate, and the number of estimators were optimized for both Random Forest and XGBoost to prevent overfitting while maximizing predictive power.
+
 ### Evaluation:
-
-- Metrics: Model performance was assessed using classification metrics such as accuracy, precision, recall, F1-score, and the Area Under the Receiver Operating Characteristic Curve (AUC-ROC).
+* Metrics: Model performance was evaluated using metrics such as accuracy, precision, recall, and Sharpe ratio. Backtesting was performed on out-of-sample data to assess the profitability and risk-adjusted returns of each model, compared to a buy-and-hold strategy.
 
 ### Results:
-The XGBoost classifier demonstrated strong performance in predicting the direction of SPY returns, with favorable classification metrics and significant insights into feature importance. The model’s predictions provided valuable signals for potential trading strategies.
+The Random Forest model outperformed the other models in terms of overall returns and Sharpe ratio, followed by the XGBoost model. The Blended Model, which combined predictions from multiple classifiers, demonstrated solid performance with a Sharpe ratio of 1.09 and returns of 300%, surpassing the buy-and-hold benchmark. The models consistently predicted positive returns but showed a bias toward long positions, indicating the need for further refinement in risk management.
 
 ### Conclusion:
-The project successfully applied an XGBoost classifier to forecast SPY return directions, offering a useful tool for investors looking to make informed trading decisions. Future work could involve integrating additional data sources, refining feature engineering, and exploring other classification algorithms to further enhance prediction accuracy.
+This project successfully demonstrated the potential of using machine learning models, including Decision Tree, Random Forest, XGBoost, and a Blended Model, to predict S&P 500 returns and generate profitable, risk-adjusted strategies. While the results are promising, they are unlikely to perform as well in live trading due to overfitting, market changes, and transaction costs. Future work should explore more robust feature engineering, incorporate additional financial variables, and apply risk management techniques to further enhance the models' performance in real-world scenarios.
 
 ## [S&P500 Short-Term Volatility Prediction with GARCH, LSTM, and LSTM-GARCH Hybrid Models](https://github.com/AndrewFSee/Profile_Projects/blob/main/S%26P500_Volatility_V0.ipynb)
 
